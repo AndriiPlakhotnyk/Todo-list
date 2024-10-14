@@ -15,8 +15,10 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@prisma/client": "^5.20.0",
 		"dotenv": "^16.4.1",
 		"express": "^4.18.2",
+		"joi": "^17.13.3",
 		"nodemon": "^3.0.3",
 		"rimraf": "^5.0.5"
 	},
@@ -33,6 +35,6 @@
 		"prettier": "^3.2.5",
 		"ts-node": "^10.9.2",
 		"tsc-alias": "^1.8.8",
-		"typescript": "^5.3.3"
+		"typescript": "5.3.3"
 	}
 }
