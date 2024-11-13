@@ -1,23 +1,25 @@
-import * as React from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Button from '~shared/components/button/button.component';
+import TodoListPage from '~/pages/todo-list.component';
+import { ROUTER_KEYS } from '~shared/keys';
+import TodoDetails from '~shared/components/todo/todo-details.component';
 
-const App = (): React.ReactNode => {
-	const [count, setCount] = React.useState(0);
-
-	const onIncrease = (): void => {
-		setCount((prev) => {
-			return prev + 1;
-		});
-	};
-
+const AppRouter: React.FC = () => {
 	return (
-		<>
-			<h1>Todo project</h1>
-			<p>{count}</p>
-			<Button text="Increase" onClick={onIncrease} />
-		</>
+		<Router>
+			<Routes>
+				<Route
+					path={ROUTER_KEYS.DASHBOARD}
+					element={<TodoListPage />}
+				/>
+				<Route
+					path={`${ROUTER_KEYS.TODO_DETAILS}/:id`}
+					element={<TodoDetails />}
+				/>
+			</Routes>
+		</Router>
 	);
 };
 
-export default App;
+export default AppRouter;
