@@ -10,11 +10,7 @@ const todosRouter: Router = Router();
 const todoRepository = new TodoRepository();
 const todoController = new TodoController();
 
-todosRouter.get(
-	'/',
-	isExist(todoRepository),
-	tryCatch(todoController.getTodos),
-);
+todosRouter.get('/', tryCatch(todoController.getTodos));
 todosRouter.get(
 	'/:id',
 	isExist(todoRepository),

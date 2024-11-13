@@ -35,7 +35,7 @@ export class TodoController {
 
 	editTodo = async (req: Request, res: Response): Promise<void> => {
 		const { title, description, isPrivate, isCompleted } = req.body;
-		const todo = this.todoService.editTodo(req.params.id, {
+		const todo = await this.todoService.editTodo(req.params.id, {
 			title,
 			description,
 			isPrivate,
@@ -46,7 +46,7 @@ export class TodoController {
 	};
 
 	removeTodo = async (req: Request, res: Response): Promise<void> => {
-		await this.todoService.removeTodo(req.params.id);
-		res.status(204).send();
+		const removeTodo = await this.todoService.removeTodo(req.params.id);
+		res.status(201).json(removeTodo);
 	};
 }

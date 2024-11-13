@@ -6,6 +6,7 @@ export const colors = Object.freeze({
 	white: '#fff',
 	lotion: '#FAFAFA',
 	jacarta: '#363E5C',
+	gray: '#ccc',
 	japaneseIndigo: '#2C3554',
 	charcoal: '#37405D',
 	UCLABlue: '#556289',
@@ -36,4 +37,6 @@ export const colors = Object.freeze({
 	grape: '#591CB8',
 	iris: '#623ECC',
 	brilliantLavender: '#FABAF0',
+	extraLigthGray: '#f5f5f5',
+	ligthGray: '#e0e0e0',
 });

@@ -2,14 +2,22 @@ import { Request, Response, NextFunction } from 'express';
 import Joi from 'joi';
 
 const todoSchema = Joi.object({
-	title: Joi.string().trim().required().messages({
-		'string.empty': 'Title is required',
-		'any.required': 'Title is required',
-	}),
-	description: Joi.string().trim().required().messages({
-		'string.empty': 'Description is required',
-		'any.required': 'Description is required',
-	}),
+	title: Joi.string()
+		.trim()
+		.required()
+		.messages({
+			'string.empty': 'Title is required',
+			'any.required': 'Title is required',
+		})
+		.optional(),
+	description: Joi.string()
+		.trim()
+		.required()
+		.messages({
+			'string.empty': 'Description is required',
+			'any.required': 'Description is required',
+		})
+		.optional(),
 	isPrivate: Joi.boolean().optional(),
 	isCompleted: Joi.boolean().optional(),
 });
