@@ -24,8 +24,7 @@ The frontend offers a responsive UI optimized for desktop, tablet, and mobile vi
 
 ## Display on tablet
 
-  ![Знімок екрана 2024-11-14 183909 - 40% tablet](https://github.com/user-attachments/assets/f53f6d19-1151-48a7-88ac-251f94bb576a)
-
+ ![Знімок екрана 2024-11-14 184336 - 40% tablet](https://github.com/user-attachments/assets/6539b31f-b1f7-4a5c-9d77-01e59ca523d3)
 
 ## Display on mobile
 
