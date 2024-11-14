@@ -23,11 +23,11 @@ The frontend offers a responsive UI optimized for desktop, tablet, and mobile vi
 
 ## Display on tablet
 
-                                                  ![Знімок екрана 2024-11-14 182531 -40% tablet](https://github.com/user-attachments/assets/26d5eeba-4a26-43e0-b6b3-3cf3f565c459)
+  ![Знімок екрана 2024-11-14 182531 -40% tablet](https://github.com/user-attachments/assets/26d5eeba-4a26-43e0-b6b3-3cf3f565c459)
 
 ## Display on mobile
 
-                                                  ![Знімок екрана 2024-11-14 182448 - 40% mobile](https://github.com/user-attachments/assets/6ea1c4b4-d03f-440c-aef2-d36a450f860a)
+  ![Знімок екрана 2024-11-14 182448 - 40% mobile](https://github.com/user-attachments/assets/6ea1c4b4-d03f-440c-aef2-d36a450f860a)
 
 ## Project commands
 
