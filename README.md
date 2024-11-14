@@ -19,15 +19,18 @@ On the backend, the application supports full CRUD functionality for todos with 
 The frontend offers a responsive UI optimized for desktop, tablet, and mobile views. It includes features like adaptive pagination (buttons on desktop, horizontal scrolling on tablet, and vertical scrolling on mobile) and form handling with real-time validation for seamless user experience. User state and tasks are managed with **Zustand**, while **React Final Form** and **Emotion CSS** power the app’s dynamic and visually appealing components.
 
 ## Display on desktop
-![Знімок екрана 2024-11-14 182547](https://github.com/user-attachments/assets/5e6aab60-b2fe-4254-840a-424bd53d2f18)
+
+![Знімок екрана 2024-11-14 182547](https://github.com/user-attachments/assets/c13ff11b-e9c0-4532-a012-e047c4d7d02d)
 
 ## Display on tablet
 
-  ![Знімок екрана 2024-11-14 182531 -40% tablet](https://github.com/user-attachments/assets/26d5eeba-4a26-43e0-b6b3-3cf3f565c459)
+  ![Знімок екрана 2024-11-14 183909 - 40% tablet](https://github.com/user-attachments/assets/f53f6d19-1151-48a7-88ac-251f94bb576a)
+
 
 ## Display on mobile
 
-  ![Знімок екрана 2024-11-14 182448 - 40% mobile](https://github.com/user-attachments/assets/6ea1c4b4-d03f-440c-aef2-d36a450f860a)
+  ![Знімок екрана 2024-11-14 184053 - 40% mobile](https://github.com/user-attachments/assets/2d179b07-a14e-47f3-b3c1-d06182139983)
+
 
 ## Project commands
 
