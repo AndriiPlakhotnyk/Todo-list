@@ -39,6 +39,4 @@ The frontend offers a responsive UI optimized for desktop, tablet, and mobile vi
 `cd packages/frontend` - jump to your frontend folder <br />
 `yarn install` dependencies <br />
 `yarn dev` - run your frontend <br />
-```
 
-```
