@@ -113,6 +113,7 @@ const TodoDetails: React.FC = () => {
 						{...register('description')}
 						onInput={handleDescriptionInput}
 						className={errors.description ? 'error' : ''}
+						rows={12}
 					/>
 					{errors.description && (
 						<ErrorText>{errors.description.message}</ErrorText>

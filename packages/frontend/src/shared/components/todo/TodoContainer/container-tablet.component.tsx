@@ -13,7 +13,7 @@ const TodoContainerTablet: React.FC<{
 	useEffect(() => {
 		getTodos();
 	}, []);
-
+	console.log('todos: ', todos);
 	return (
 		<Slider>
 			{todos.map((todo) => (

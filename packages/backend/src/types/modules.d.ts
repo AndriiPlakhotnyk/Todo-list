@@ -1,8 +1,14 @@
+import { User } from '@prisma/client';
+
 declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
 			TEST: string;
 			DATABASE_URL: string;
+		}
+
+		interface Request {
+			user?: User;
 		}
 	}
 }

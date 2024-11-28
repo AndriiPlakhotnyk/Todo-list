@@ -8,8 +8,8 @@ export class TodoService {
 		this.todoRepository = new TodoRepository();
 	}
 
-	async getTodos(): Promise<Todo[]> {
-		return this.todoRepository.getAllTodos();
+	async getTodos(userId: string): Promise<Todo[]> {
+		return this.todoRepository.getTodosByUserId(userId);
 	}
 
 	async getTodo(id: string): Promise<Todo | null> {
