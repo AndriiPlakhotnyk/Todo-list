@@ -12,10 +12,6 @@ const todoSchema = Joi.object({
 	}),
 	isPrivate: Joi.boolean().optional(),
 	isCompleted: Joi.boolean().optional(),
-	userId: Joi.string().required().messages({
-		'string.empty': 'User ID is required',
-		'any.required': 'User ID is required',
-	}),
 });
 
 export const validateAddTodoPayload = (

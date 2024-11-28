@@ -1,8 +1,12 @@
 import { TodoController } from '@/controllers/todo.controller';
-import { isExist } from '@/middlewares/isExist.middleware';
-import { tryCatch } from '@/middlewares/tryCatch.middleware';
-import { validateAddTodoPayload } from '@/middlewares/validateAddTodoPayload.middleware';
-import { validateEditTodoPayload } from '@/middlewares/validateEditTodoPayload';
+import { tryCatch } from '@/middlewares/common-middlewares';
+import {
+	checkTodoAccess,
+	isExist,
+	isTodoOwner,
+	validateAddTodoPayload,
+	validateEditTodoPayload,
+} from '@/middlewares/todo-middlewares';
 import { TodoRepository } from '@/repositories';
 import { Router } from 'express';
 
@@ -14,6 +18,7 @@ todosRouter.get('/', tryCatch(todoController.getTodos));
 todosRouter.get(
 	'/:id',
 	isExist(todoRepository),
+	checkTodoAccess,
 	tryCatch(todoController.getTodo),
 );
 todosRouter.post('/', validateAddTodoPayload, tryCatch(todoController.addTodo));
@@ -21,11 +26,13 @@ todosRouter.put(
 	'/:id',
 	validateEditTodoPayload,
 	isExist(todoRepository),
+	isTodoOwner,
 	tryCatch(todoController.editTodo),
 );
 todosRouter.delete(
 	'/:id',
 	isExist(todoRepository),
+	isTodoOwner,
 	tryCatch(todoController.removeTodo),
 );
 

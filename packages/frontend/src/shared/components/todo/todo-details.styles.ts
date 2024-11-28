@@ -85,7 +85,7 @@ export const Textarea = styled.textarea`
   resize: none;
   overflow: hidden;
   transition: height 0.2s ease-out;
-  min-height: 200px;
+  min-height: 400px;
 
   &.error {
     border-color: ${THEME.colors.mediumVioletRed};

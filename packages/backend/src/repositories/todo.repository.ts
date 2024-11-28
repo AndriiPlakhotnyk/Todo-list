@@ -2,8 +2,10 @@ import { Todo } from '@prisma/client';
 import prisma from '../config/database';
 
 export class TodoRepository {
-	async getAllTodos(): Promise<Todo[]> {
-		return prisma.todo.findMany();
+	async getTodosByUserId(userId: string): Promise<Todo[]> {
+		return prisma.todo.findMany({
+			where: { userId },
+		});
 	}
 
 	async getById(id: string): Promise<Todo | null> {
